@@ -1,0 +1,23 @@
+﻿@model Films.Models.Movies
+
+
+@{
+    ViewData["Title"] = "Must Watch";
+}
+<h3>@ViewData["Title"]</h3>
+
+
+<div class="container align-content-sm-center">
+
+    <div class="card bg-secondary text-white">
+        <div class="card-header"><p class="text-uppercase"><strong>@Model.Title</strong></p></div>
+        <div class="card-body">
+            <p><strong>Genre:</strong> @Model.Genre<p>
+            <p><strong>Score: </strong>@Model.Score<p>
+            <p><strong>Director: </strong> @Model.Director<p>
+</div>
+    </div>
+</div>
+
+<br />
+
